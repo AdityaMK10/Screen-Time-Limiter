@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-width: 300px;
+    max-width: 100%;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #ffffff 0%, #f7f7f7 100%);
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label {
+    font-size: 14px;
+    color: #4f4f4f;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+    background-color: #f9f9f9;
+    color: #333333;
+}
+
+input:focus {
+    outline: none;
+    border-color: #d0d0d0;
+    box-shadow: 0 0 0 2px rgba(208, 208, 208, 0.3);
+}
+
+button {
+    background-color: #eaeaea;
+    color: #333333;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #dcdcdc;
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+.timer-display {
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
+
+.timer-display p {
+    font-size: 14px;
+    color: #4f4f4f;
+    margin: 5px 0;
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    input, button {
+        padding: 8px;
+    }
+}
+
+@media screen and (min-width: 401px) {
+    .container {
+        min-width: 350px;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    body {
+        background: linear-gradient(135deg, #2e2e2e 0%, #3e3e3e 100%);
+    }
+
+    .container {
+        background-color: #2e2e2e;
+    }
+
+    h1 {
+        color: #f1f1f1;
+    }
+
+    label {
+        color: #cfcfcf;
+    }
+
+    input {
+        background-color: #3e3e3e;
+        border-color: #4a4a4a;
+        color: #f1f1f1;
+    }
+
+    .timer-display {
+        background-color: #3e3e3e;
+    }
+
+    .timer-display p {
+        color: #f1f1f1;
+    }
+
+    button {
+        background-color: #4a4a4a;
+        color: #f1f1f1;
+    }
+
+    button:hover {
+        background-color: #5a5a5a;
+    }
+}
