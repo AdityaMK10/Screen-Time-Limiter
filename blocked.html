@@ -3,32 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Website Blocked</title>
+  <title>Time to Take a Break</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background-color: #f0f4f8;
+    }
+    .container {
       text-align: center;
-      padding: 50px;
-      background-color: #f8d7da;
-      color: #721c24;
+      padding: 40px;
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      max-width: 450px;
+      margin: 20px;
+    }
+
+    .icon {
+      font-size: 48px;
+      margin-bottom: 20px;
     }
 
     h1 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
+      color: #2b6cb0;
+      font-size: 28px;
+      margin: 0 0 16px 0;
     }
 
     p {
-      font-size: 1.2em;
-      margin-bottom: 20px;
+      color: #4a5568;
+      font-size: 16px;
+      line-height: 1.6;
+      margin: 0 0 20px 0;
     }
 
-    
+    .suggestion {
+      background-color: #ebf8ff;
+      padding: 16px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    .suggestion p {
+      color: #2c5282;
+      margin: 0;
+    }
+
+    .quote {
+      margin-top: 24px;
+      padding: 20px;
+      border-top: 1px solid #e2e8f0;
+    }
+
+    .quote p {
+      font-style: italic;
+      color: #718096;
+      margin: 0;
+    }
+
+    .quote .author {
+      font-size: 14px;
+      color: #4a5568;
+      margin-top: 8px;
+    }
   </style>
 </head>
 <body>
-  <h1>Website Blocked</h1>
-  <p>You have reached your time limit for this website.</p>
-  
+  <div class="container">
+    <div class="icon">⏳</div>
+    <h1>Time to Take a Break</h1>
+    <p>You've reached your time limit for this website.</p>
+    <div class="suggestion">
+      <p>Why not stretch, take a walk, or grab some water?</p>
+    </div>
+    <div class="quote">
+      <p>"It's not that we have little time, but more that we waste a lot of it."</p>
+      <p class="author">― Seneca</p>
+    </div>
+  </div>
 </body>
 </html>
