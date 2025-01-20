@@ -10,9 +10,7 @@
     "description": "Set time limits for websites and automatically block them when the limit is reached",
     "permissions": [
         "storage",
-        "tabs",
-        "webNavigation",
-        "activeTab"
+        "tabs"
     ],
     "action": {
         "default_popup": "popup.html"
