@@ -11,6 +11,11 @@ A chrome extension to set personalized time limits for websites and automaticall
 3. Enable **Developer Mode**.
 4. Click **Load unpacked** and select the project folder.
 
+   OR
+
+1. Visit the [Chrome Web Store page](https://chromewebstore.google.com/detail/screen-time-limiter/jplackcnmigbganpfbkghkinkbhpgnpg).
+2. Click **Add to Chrome** to install the extension.
+
 ## Technologies Used
 - JavaScript
 - HTML/CSS
